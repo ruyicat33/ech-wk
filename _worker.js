@@ -10,7 +10,7 @@ import { connect } from 'cloudflare:sockets';
 export default {
   async fetch(request, env, ctx) {
     try {
-      const token ='265dds';
+      const token ='';
       const upgradeHeader = request.headers.get('Upgrade');
       
       if (!upgradeHeader || upgradeHeader.toLowerCase() !== 'websocket') {
